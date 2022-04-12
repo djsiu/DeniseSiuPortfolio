@@ -56,37 +56,43 @@
         </nav>
     </header>
 
-    <section>
-        <h2 id="page-title">GET IN TOUCH</h2>
+    <section id="title">
+        <h2 id="page-title">leave a message after the beep... BEEP</h2>
     </section>
-    <section>
-        <h3>reach me</h3>
-        <p><a href="tel:604-123-4567">604-123-4567</a></p>
-        <p><a href="mailto:denises@sfu.ca">denises@sfu.ca</a></p>
-    </section>
-    <section>
-        <!-- form built with help from: https://learn.shayhowe.com/html-css/building-forms/ -->
-        <h3>leave a message after the beep... BEEP</h3>
 
+    <div id="contact-container">
+        <div class="contact-grid-item">
+            <section id="contact-form">
+                <!-- form built with help from: https://learn.shayhowe.com/html-css/building-forms/ -->
+                <!-- using formspree learned from: https://www.youtube.com/watch?v=N-VXZOng13s&ab_channel=CodewithRom%C3%A1rioHuebra -->
 
-        <!-- using formspree learned from: https://www.youtube.com/watch?v=N-VXZOng13s&ab_channel=CodewithRom%C3%A1rioHuebra -->
-
-        <form action="https://formspree.io/f/xgednkvn" method="POST">
-            <label for="email">
+                <form action="https://formspree.io/f/xgednkvn" method="POST">
+                    <label for="email">
                 Name
                 <input type="text" id="email" name="name" placeholder="Name" required>
             </label>
-            <label for="email">
+                    <label for="email">
                 Email
                 <input type="text" id="email" name="email" placeholder="Email" required>
             </label>
-            <label for="message">
+                    <label for="message">
                 Message
-                <textarea id="message" name="message" placeholder="Write your message here." required></textarea>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
             </label>
-            <button type="submit" name="submit">SEND</button>
-        </form>
-    </section>
+                    <button type="submit" name="submit">SEND</button>
+                </form>
+            </section>
+        </div>
+        <div class="contact-grid-item">
+            <section id="contact-info">
+                <h3>reach out</h3>
+                <h4>Denise Siu</h4>
+                <p>Richmond, BC</p>
+                <p><a href="tel:604-123-4567">604-123-4567</a></p>
+                <p><a href="mailto:denises@sfu.ca">denises@sfu.ca</a></p>
+            </section>
+        </div>
+    </div>
     <script src="js/nav-bar.js"></script>
 </body>
 
