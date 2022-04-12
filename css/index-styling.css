@@ -1,0 +1,261 @@
+body {
+    background-color: rgb(237, 117, 47);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    color: rgb(225, 220, 197);
+}
+
+.embedded-link:hover,
+.embedded-link:focus {
+    text-decoration: underline;
+}
+
+.text {
+    padding-bottom: 1.5rem;
+    line-height: 1.8 rem;
+    max-width: 45rem;
+    min-width: none;
+    color: black;
+}
+
+header {
+    background-color: rgb(237, 117, 47);
+}
+
+#about {
+    padding-top: 15rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+#continue-arrow {
+    margin-top: 15rem;
+}
+
+#continue-arrow>a {
+    transition-duration: 0.5s;
+    font-size: 2rem;
+}
+
+#continue-arrow:hover>a,
+#continue-arrow:focus>a {
+    font-size: 5rem;
+}
+
+.project-listing,
+.des-project {
+    list-style-type: none;
+    padding: 2rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    border-color: rgb(225, 220, 197);
+    border-top-style: solid;
+}
+
+
+/* last-child learned from: https://www.w3schools.com/cssref/sel_last-child.asp */
+
+.project-listing:last-child {
+    border-color: rgb(225, 220, 197);
+    border-style: solid none solid none;
+}
+
+#desc,
+#programming,
+#design {
+    padding-top: 8rem;
+}
+
+
+/* project listings grid */
+
+.project-listing-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* help aligning items from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container */
+
+.listing-details {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+/* MOUSE CURSOR HOVER IMAGES */
+
+img {
+    max-height: 25rem;
+    max-width: 25rem;
+}
+
+#parent-app-cursor,
+#int-chicken-cursor,
+#figment-cursor,
+#safe-spaces-cursor,
+#heather-cursor,
+#waffle-cafe-cursor,
+#name-cursor {
+    position: absolute;
+    visibility: hidden;
+    transition: 0.1s;
+    pointer-events: none;
+}
+
+
+/* learned combinators from: https://www.w3schools.com/css/css_combinators.asp */
+
+#parent-app-listing:hover>#parent-app-cursor,
+#int-chicken-listing:hover>#int-chicken-cursor,
+#figment-listing:hover>#figment-cursor,
+#safe-spaces-listing:hover>#safe-spaces-cursor,
+#heather-listing:hover>#heather-cursor,
+#waffle-cafe-listing:hover>#waffle-cafe-cursor,
+#about-name span:hover~#name-cursor {
+    visibility: visible;
+}
+
+
+/* changing cursors learned at: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor */
+
+#parent-app-listing,
+#int-chicken-listing,
+#figment-listing,
+#safe-spaces,
+#heather-listing,
+#waffle-cafe-listing,
+#about-name span {
+    cursor: pointer;
+}
+
+
+/* CHANGING TEXT ON HOVER AND FOCUS */
+
+.project-title {
+    transition-duration: 0.25s;
+}
+
+.project-title:hover,
+.project-link:focus-within~.project-title {
+    color: black;
+}
+
+
+/* CONTACT BUTTON */
+
+#contact:hover,
+#contact:focus {
+    background-color: black;
+    color: rgb(237, 117, 47);
+}
+
+
+/* DESCRIPTION STYLING */
+
+#desc-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 5rem;
+    padding-right: 4rem;
+}
+
+.desc-item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.desc-item2 {
+    text-align: center;
+}
+
+
+/* ADJUSTING FOR DIFFERENT SCREEN SIZES */
+
+
+/* MID SIZE */
+
+@media (max-width: 62.5rem) {
+    h2 {
+        font-size: 6rem;
+    }
+    #desc-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* MOBILE SIZE 1 */
+
+@media (max-width: 45rem) {
+    .project-listing-container {
+        grid-template-columns: 1fr;
+    }
+    .listing-details {
+        padding-top: 1rem;
+        justify-content: left;
+    }
+    .listing-details>p {
+        font-weight: bold;
+        font-family: "Inter-Black", sans-serif;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+}
+
+
+/* MOBILE SIZE 2 */
+
+@media (max-width: 32rem) {
+    h2,
+    h3 {
+        font-size: 2rem;
+    }
+    #about {
+        padding-top: 8rem;
+    }
+    #continue-arrow {
+        margin-top: 3rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    #desc,
+    #programming,
+    #design {
+        padding-top: 3rem;
+    }
+    .project-listing {
+        margin: 0;
+    }
+    .projects-title {
+        text-align: center;
+        padding: 1rem;
+    }
+    #about-title {
+        text-align: center;
+        padding: 1rem;
+    }
+    #desc-container {
+        padding: 0.8rem;
+    }
+    #desc-item1,
+    #desc-item2 {
+        width: 50%;
+    }
+}

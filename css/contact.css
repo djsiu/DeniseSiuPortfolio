@@ -1,0 +1,46 @@
+        body {
+            background-color: rgb(225, 220, 197);
+        }
+        
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        a,
+        ul {
+            color: rgb(237, 117, 47);
+            padding: 0;
+        }
+        
+        section {
+            padding: 3rem;
+        }
+        
+        @media (max-width: 45rem) {
+            h2 {
+                font-size: 5rem;
+            }
+            h3 {
+                font-size: 3rem;
+            }
+            section {
+                padding: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 26rem) {
+            h2 {
+                font-size: 3rem;
+            }
+            h3 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 1rem;
+            }
+            #page-title {
+                padding-top: 4rem;
+            }
+        }

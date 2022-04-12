@@ -1,0 +1,242 @@
+body {
+    background-color: rgb(225, 220, 197);
+    padding-top: 5rem;
+    width: 100%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+    color: rgb(237, 117, 47);
+    padding: 0;
+}
+
+p,
+ul {
+    line-height: 1.8;
+    color: black;
+}
+
+
+/* WHY IS UL NOT ALIGNED !!?!?!?! */
+
+ul {
+    margin: auto;
+    padding: auto;
+}
+
+h2 {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+}
+
+h5 {
+    font-weight: bold;
+    font-family: "Inter-Black", sans-serif;
+    font-size: 1.5rem;
+    color: rgb(225, 220, 197);
+}
+
+.card-text {
+    color: rgb(225, 220, 197);
+}
+
+p {
+    max-width: 50rem;
+}
+
+section {
+    padding: 1.5rem;
+    padding-left: 10rem;
+    /* padding-right: 10rem; */
+}
+
+iframe {
+    max-width: 70%;
+}
+
+#grid-container-desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* PARENT APP NAV */
+
+#parent-app-nav {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+#parent-app-nav-list {
+    list-style-type: none;
+}
+
+.parent-app-nav-item:hover,
+.parent-app-nav-item:focus {
+    text-decoration: underline;
+}
+
+html {
+    scroll-padding-top: 4rem;
+}
+
+
+/* FLIP CARDS ANIMATIONS FOR MY CONTRIBUTIONS */
+
+
+/* NOTE: how can I make the card flip feature more accessible */
+
+
+/* card flip feature found at https://www.w3schools.com/howto/howto_css_flip_card.asp */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: rgb(237, 117, 47);
+    color: rgb(225, 220, 197);
+    color: black;
+    border-radius: 1rem;
+    /* center the content vertically */
+    padding: 40% 10%;
+}
+
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+img.flip-img {
+    border-radius: 1rem;
+}
+
+
+/* FLIP CARDS GRID */
+
+#flip-grid-container {
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+
+/* bug fix test */
+
+h2,
+span {
+    font-weight: bold;
+    font-family: "Inter-Black", sans-serif;
+    font-size: 10rem;
+}
+
+
+/* MID SIZE SCREEN */
+
+@media (max-width: 75rem) {
+    h2 {
+        font-size: 8rem;
+    }
+    section {
+        padding-left: 4rem;
+    }
+    p {
+        max-width: 35rem;
+    }
+    #parent-app-nav {
+        right: 1rem;
+        bottom: 1rem;
+    }
+}
+
+@media (max-width: 57rem) {
+    #parent-app-nav {
+        display: none;
+    }
+    h2 {
+        font-size: 5rem;
+    }
+    iframe {
+        height: 15rem;
+    }
+}
+
+@media (max-width: 45rem) {
+    #grid-container-desc {
+        grid-template-columns: 1fr;
+    }
+    #flip-grid-container {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 30rem) {
+    section {
+        padding-left: 1.5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p,
+    li {
+        font-size: 0.8rem;
+    }
+    .flip-card-inner {
+        width: 80%;
+        height: 80%;
+    }
+    iframe {
+        width: 20rem;
+        height: 8rem;
+    }
+}

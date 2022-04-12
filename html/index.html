@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <title>Denise Siu</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/index-styling.css">
+
+    <!-- learned from: https://stackoverflow.com/questions/4888377/how-to-add-a-browser-tab-icon-favicon-for-a-website -->
+    <link rel="icon" href="../assets/tab-icon.png">
+</head>
+
+<body>
+    <header>
+        <!-- created with help from: https://www.w3schools.com/css/css_navbar.asp -->
+        <!-- toggle button with help from: https://codepen.io/WebDevSimplified/pen/LqKQRK -->
+        <nav id="nav-bar">
+            <div class="mobile-name">
+                <a href="index.html#about" class="nav-element" id="about-nav-mobile">
+                    <p class="mobile-h1">DENISE SIU</p>
+                </a>
+            </div>
+            <a href="#nav-bar" class="toggle-button" aria-label="main menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul id="nav-list">
+                    <li class="nav-list-itemL">
+                        <a href="#about" class="nav-element underline-nav" id="about-nav">
+                            <h1>DENISE SIU</h1>
+                        </a>
+                    </li>
+                    <li class="nav-list-itemL">
+                        <a href="#desc" class="nav-element underline-nav">about</a>
+                    </li>
+                    <li class="nav-list-itemL">
+                        <a href="#programming" class="nav-element underline-nav">programming</a>
+                    </li>
+                    <li class="nav-list-itemL">
+                        <a href="#design" class="nav-element underline-nav">design</a>
+                    </li>
+                    <!-- open in new tab learned from: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/-->
+                    <li class="nav-list-itemR">
+                        <a href="../assets/DeniseSiu_Resume.pdf" class="nav-element underline-nav" id="resume" target="_blank" rel="noopener noreferrer">2022 resume</a>
+                    </li>
+                    <li class="nav-list-itemR">
+                        <a href="contact.html" class="nav-element" id="contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+
+        <a href="#desc">
+            <h2 id="about-name">
+                <span>DENISE SIU</span>
+
+                <div id="name-cursor">
+                    <img src="../assets/denise-siu-photo.jpeg" alt="photo of Denise Siu" height="200" width="300">
+                </div>
+            </h2>
+
+
+        </a>
+
+
+        <p>aspiring Software Engineer currently studying at Simon Fraser University.</p>
+        <div id="continue-arrow">
+            <a href="#desc">v</a>
+        </div>
+    </section>
+
+    <!-- CHANGE THIS LATER!!! -->
+    <section id="desc">
+        <h3 id="about-title">ABOUT</h3>
+
+        <div id="desc-container">
+            <div class="desc-item1">
+                <p class="text">
+                    Hi, I’m Denise an aspiring Software Engineer with an interest in design and UI/UX. I’m currently in my second year as a Computing Science student at SFU and minoring in Interactive Arts and Technology.
+                </p>
+                <p class="text">
+                    I’ve been getting my start with teaching kids how to program games through a JavaScript cirriculum. Additionally, working on projects such as the <a href="parent-app.html" class="embedded-link">Parent App</a> or the <a class="embedded-link"
+                        href="https://github.com/djsiu/MountainMadness2021">Interrupting Chicken</a>. My next steps will be a dedicated search for a co-op position where I can gain experience working in the industry and get just one step closer to achieving
+                    my ultimate goal.
+                </p>
+                <p class="text">
+                    Outside of school and career I’m constantly finding new hobbies and always open to trying anything new. From rock climbing to crochet and 3D modelling I like to take my curiosity and passion into everything I do.
+                </p>
+            </div>
+            <div class="desc-item2">
+
+                <img src="../assets/denise-spin.webp" alt="gif of Denise spinning with programming language icons surrounding" width="1000">
+                <!-- <p>Languages</p>
+                <ul class="text ">
+                    <li>C/C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                </ul> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="programming">
+        <h3 class="projects-title">PROGRAMMING</h3>
+
+        <ul>
+            <li class="project-listing" id="parent-app-listing">
+                <a class="project-link" href="parent-app.html">
+                    <div class="project-listing-container ">
+                        <div class="grid-item">
+                            <h4 class="project-title ">Parent Management App</h4>
+                            <p id="temp-for-grading">[TO BE GRADED] Android Studio application</p>
+                            <!-- <p>Android Studio application</p> -->
+                        </div>
+                        <div class="grid-item listing-details">
+                            <p>CMPT 276 — Fall 2021</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div id="parent-app-cursor">
+                    <img src="../assets/project-cursors/parent-app.webp " alt="gif of parent app's add child feature" height="300" width="150">
+                </div>
+            </li>
+
+            <li class="project-listing" id="int-chicken-listing">
+                <a href="https://github.com/djsiu/MountainMadness2021">
+                    <div class="project-listing-container">
+                        <div class="grid-item">
+                            <h4 class="project-title">Interrupting Chicken</h4>
+                            <p>Typing game in JavaScript and React</p>
+                        </div>
+                        <div class="grid-item listing-details">
+                            <p>Mountain Madness 2021</p>
+                        </div>
+                    </div>
+                </a>
+                <div id="int-chicken-cursor">
+                    <img src="../assets/project-cursors/interrupting-chicken.webp" alt="gif of interrupting chicken typing game" height="200" width="300">
+                </div>
+            </li>
+
+            <li class="project-listing" id="figment-listing">
+                <a href="https://github.com/djsiu/Figment">
+                    <div class="project-listing-container">
+                        <div class="grid-item">
+                            <h4 class="project-title">Figment</h4>
+                            <p>Tile-based adventure game in Java</p>
+                        </div>
+                        <div class="grid-item listing-details">
+                            <p>IAT 167 — Spring 2021</p>
+                        </div>
+                    </div>
+                </a>
+                <div id="figment-cursor">
+                    <img src="../assets/project-cursors/figment.webp" alt="gif of the figment game" height="200" width="300">
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="design">
+        <h3 class="projects-title">DESIGN</h3>
+
+        <ul>
+            <li class="project-listing" id="safe-spaces-listing">
+                <a href="https://youtu.be/Nz7lxBBofes">
+                    <div class="project-listing-container">
+                        <div class="grid-item">
+                            <h4 class="project-title">Safe Spaces</h4>
+                            <p>UI mockup of an exhibit site</p>
+                        </div>
+                        <div class="grid-item listing-details">
+                            <p>IAT 235 — Summer 2021</p>
+                        </div>
+                    </div>
+                </a>
+                <div id="safe-spaces-cursor">
+                    <img src="../assets/project-cursors/safe-spaces.webp" alt="gif of the safe spaces mockup" height="200" width="300">
+                </div>
+            </li>
+
+            <li class="project-listing" id="heather-listing">
+                <a href="https://youtu.be/KL3Z8cfPoL8">
+                    <div class="project-listing-container">
+                        <div class="grid-item">
+                            <h4 class="project-title">Heather Lyric Video</h4>
+                            <p>Kinetic Typography done in After Effects</p>
+                        </div>
+                        <div class="grid-item listing-details">
+                            <p>IAT 100 — Spring 2020</p>
+                        </div>
+                    </div>
+                </a>
+                <div id="heather-cursor">
+                    <img src="../assets/project-cursors/heather.webp" alt="gif of the heather lyric video" height="200" width="300">
+                </div>
+            </li>
+
+            <li class="project-listing" id="waffle-cafe-listing">
+                <a href="https://youtu.be/XlzMApuBSw4">
+                    <div class="project-listing-container">
+                        <div class="grid-item">
+                            <h4 class="project-title">Waffle Cafe</h4>
+                            <p>Simulation game</p>
+                        </div>
+                        <div class="grid-item listing-details">
+                            <p>IAT 265 — Fall 2021</p>
+                        </div>
+                    </div>
+                </a>
+                <div id="waffle-cafe-cursor">
+                    <img src="../assets/project-cursors/waffle-cafe.webp" alt="gif of the waffle cafe game" height="200" width="300">
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <a href="mailto:denises@sfu.ca">denises@sfu.ca</a>
+        <p>Richmond, BC</p>
+        <!-- <a href="https://www.linkedin.com/in/denise-siu/">LinkedIn</a>  -->
+    </footer>
+
+    <script src="../js/image-cursor.js"></script>
+    <script src="../js/nav-bar.js"></script>
+</body>
+
+</html>

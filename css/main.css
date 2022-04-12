@@ -1,0 +1,279 @@
+/* IMPORTING FONTS */
+
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter.ttf");
+}
+
+@font-face {
+    font-family: "Inter-Black";
+    src: url("../assets/fonts/Inter-Black.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+/* learned from: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: block;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    padding: 3rem;
+    padding-left: 3rem;
+    width: 100%;
+    height: 10%;
+}
+
+a,
+li,
+p {
+    font-family: Inter, sans-serif;
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-family: "Inter-Black", sans-serif;
+    font-size: 10rem;
+}
+
+h3 {
+    font-weight: bold;
+    font-family: "Inter-Black", sans-serif;
+    padding: 3rem;
+    font-size: 5rem;
+}
+
+h4 {
+    font-weight: bold;
+    font-family: "Inter-Black", sans-serif;
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* STYLING HEADER */
+
+header {
+    background-color: rgb(225, 220, 197);
+    border-width: 0.15rem;
+    border-color: black;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#nav-bar {
+    position: relative;
+}
+
+.nav-element {
+    position: relative;
+    color: black;
+}
+
+ul#nav-list {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li a.nav-element {
+    display: block;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    /* to vertically align items: https://www.w3schools.com/css/css_align.asp */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.nav-list-itemL {
+    float: left;
+}
+
+li.nav-list-itemR {
+    float: right;
+}
+
+#about-nav {
+    padding: 0.85rem 1rem;
+}
+
+.mobile-h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    color: black;
+    padding: 0.5rem 1rem;
+}
+
+#resume {
+    position: relative;
+    border-color: black;
+    border-width: 0.15rem;
+    height: 100%;
+    border-left-style: solid;
+}
+
+#contact {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin-right: 1rem;
+    margin-top: 0.35rem;
+    border: 0.15rem solid black;
+    border-radius: 15rem;
+}
+
+
+/* UNDERLINE ANIMATION FOR NAV-ELEMENTS */
+
+
+/* learned from: https://www.30secondsofcode.org/css/s/hover-underline-animation */
+
+.underline-nav:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0.75rem;
+    left: 10%;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline-nav:hover:after,
+.underline-nav:focus:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#contact {
+    transition-duration: 0.3s;
+}
+
+#contact:hover,
+#contact:focus {
+    background-color: black;
+    color: rgb(225, 220, 197);
+}
+
+
+/* STUFF FOR NAV-BAR.JS */
+
+.hidden {
+    display: none;
+}
+
+.not-needed {
+    display: none;
+}
+
+
+/* TOGGLE NAV BUTTON */
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+/* MOBILE NAV BAR */
+
+.mobile-name {
+    display: none;
+}
+
+@media (max-width: 45rem) {
+    .mobile-name {
+        display: block;
+    }
+    #nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    /* FIXING THE UNDERLINE ON MOBILE SIZE  */
+    .underline-nav:after {
+        content: "";
+        position: absolute;
+        width: 20%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0.25rem;
+        left: 40%;
+        background-color: black;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    #contact {
+        margin: 0;
+    }
+    #resume {
+        border: none;
+    }
+}

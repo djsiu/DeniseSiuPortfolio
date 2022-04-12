@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent App | Denise Siu</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/parent-app-styling.css">
+
+    <link rel="icon" href="../assets/tab-icon.png">
+
+</head>
+
+<body>
+    <header>
+        <!-- created with help from: https://www.w3schools.com/css/css_navbar.asp -->
+        <!-- toggle button with help from: https://codepen.io/WebDevSimplified/pen/LqKQRK -->
+        <nav id="nav-bar">
+            <div class="mobile-name">
+                <a href="index.html#about" class="nav-element" id="about-nav-mobile">
+                    <p class="mobile-h1">DENISE SIU</p>
+                </a>
+            </div>
+            <a href="#nav-bar" class="toggle-button" aria-label="main menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul id="nav-list">
+                    <li class="nav-list-itemL">
+                        <a href="index.html#about" class="nav-element underline-nav" id="about-nav">
+                            <h1>DENISE SIU</h1>
+                        </a>
+                    </li>
+                    <li class="nav-list-itemL">
+                        <a href="index.html#desc" class="nav-element underline-nav">about</a>
+                    </li>
+                    <li class="nav-list-itemL">
+                        <a href="index.html#programming" class="nav-element underline-nav">programming</a>
+                    </li>
+                    <li class="nav-list-itemL">
+                        <a href="index.html#design" class="nav-element underline-nav">design</a>
+                    </li>
+                    <!-- open in new tab learned from: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/-->
+                    <li class="nav-list-itemR">
+                        <a href="../assets/DeniseSiu_Resume.pdf" class="nav-element underline-nav" id="resume" target="_blank" rel="noopener noreferrer">2022 resume</a>
+                    </li>
+                    <li class="nav-list-itemR">
+                        <a href="contact.html" class="nav-element" id="contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="parent-app-nav">
+        <ul id="parent-app-nav-list">
+            <li>
+                <a href="#about" class="parent-app-nav-item">about</a>
+            </li>
+            <li>
+                <a href="#description" class="parent-app-nav-item">description</a>
+            </li>
+            <li>
+                <a href="#product" class="parent-app-nav-item">product</a>
+            </li>
+            <li>
+                <a href="#contribution" class="parent-app-nav-item">my contribution</a>
+            </li>
+            <li>
+                <a href="#prob-and-reso" class="parent-app-nav-item">problems & resolutions</a>
+            </li>
+            <li>
+                <a href="#takeaways" class="parent-app-nav-item">takeaways</a>
+            </li>
+        </ul>
+    </section>
+    <section id="about">
+        <a href="https://github.com/djsiu/CMPT276_ParentApp">
+            <img src="../assets/github-icon.png" class="icon" alt="link to github page" height="30" width="30">
+        </a>
+        <a href="https://youtu.be/RRFdEtyoQpE">
+            <img src="../assets/youtube-icon.png" class="icon" alt="link to youtube demo" height="30" width="30">
+        </a>
+
+        <h2>PARENT APP</h2>
+        <p>Children management app with a time out timer, coin flip, task manager, and calm down features.</p>
+    </section>
+
+    <section id="tools-members">
+        <div id="grid-container-desc">
+            <div class="grid-item-desc">
+                <h3>Tools + Concepts Used</h3>
+                <ul>
+                    <li>Android Studio - Java</li>
+                    <li>Object Oriented Programming</li>
+                    <li>State Machines</li>
+                    <li>Scrum</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+            <div class="grid-item-desc">
+                <h3>Team Members</h3>
+                <ul>
+                    <li>Peter Soava</li>
+                    <li>Denise Siu</li>
+                    <li>Braden Takashima</li>
+                    <li>Matthew So</li>
+
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="description">
+        <h3 id="description-title">Description</h3>
+        <p>
+            Over the course of 6 weeks, I worked with a group of 4 people to create an application using Android Studio for the course Introduction to Software Engineering (CMPT 276). We worked in a scrum-style team to create an application that can help parents
+            manage their children.
+        </p>
+    </section>
+
+    <section id="product">
+        <h3>The Product</h3>
+        <!-- embedding video: https://support.google.com/youtube/answer/171780?hl=en -->
+        <iframe width="850" height="500" src="https://www.youtube.com/embed/RRFdEtyoQpE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Video demo of the Parent App</p>
+    </section>
+
+    <section id="contribution">
+        <h3>My Contribution</h3>
+        <h4>My Roles</h4>
+        <p>
+            Throughout the project, I took on the roles of Repository Manager and Product Owner. As Product Owner, I was responsible for corresponding with the instructor regarding the user stories we were given and clarifying the requirements and purpose of features
+            and the overall application. In the role of Repository Manager, I would be responsible for reviewing all merge requests and ensuring that it was up to the group standards. In addition, I would manage issues and ensure that they were all assigned
+            and clear.
+        </p>
+
+        <h4>My Features</h4>
+        <!-- card flip feature found at https://www.w3schools.com/howto/howto_css_flip_card.asp -->
+        <div id="flip-grid-container">
+
+            <!-- family members manager (add, edit and delete) -->
+            <div class="flip-card flip-grid-item" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h5 class="card-text">Family Member Manager</h5>
+                        <p class="card-text">with shared preferences</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="../assets/parent-app-flips/family-manager.webp" class="flip-img" alt="gif of the family member manager feature" style="width:300px;height:300px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- gallery and camera integration -->
+            <div class="flip-card flip-grid-item" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h5 class="card-text">Camera and Gallery Integration</h5>
+                        <p class="card-text">using permissions and saving</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="../assets/parent-app-flips/camera-and-gallery.webp" class="flip-img" alt="gif of the camera and gallery feature" style="width:300px;height:300px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- coin flip history -->
+            <div class="flip-card flip-grid-item" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h5 class="card-text">Coin Flip History</h5>
+                        <p class="card-text">storing and displaying coin flip data [with Braden]</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="../assets/parent-app-flips/coin-flip-history.webp" class="flip-img" alt="gif of the coin flip history feature" style="width:300px;height:300px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- take a breath -->
+            <div class="flip-card flip-grid-item" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h5 class="card-text">Take a Breath</h5>
+                        <p class="card-text">medatiative breathing feature</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="../assets/parent-app-flips/take-a-breath.webp" class="flip-img" alt="gif of the take a breath feature" style="width:300px;height:300px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prob-and-reso">
+        <h3>Problems and Resolutions</h3>
+
+        <h4>Team Formation</h4>
+        <p>
+            In the beginning, as with any group formation, we may have had some conflict in terms of figuring out everyone’s roles within the group. As a scrum team we had around 3-5 weekly meetings to ensure that we were all on the same track. Having lots of meetings
+            allowed us to get to know everyone, their individual styles, and how we would all mesh as a group.
+        </p>
+
+        <h4>Learning and Using Git</h4>
+        <p>
+            None of us had ever used Git in this capacity, in the beginning, so there were a few issues with merging code and ensuring that we all worked on the issues assigned to us. At one point we ran into issues with two people working on the same issue. We quickly
+            fixed and realized the problem at one of our frequent meetings and we worked to resolve this by ensuring that all issues were assigned and clearly defined.
+        </p>
+
+        <h4>Overcorrection</h4>
+        <p>
+            To prevent any more mishaps, we followed the issues more closely on the repo. This however caused problems with overcorrection where the tasks assigned were too specific and people had to wait on others to finish tasks. This was not maximizing our team's
+            abilities, so from then on we worked in subgroups of two and communicated frequently outside of group meetings while still using Git issues to organize tasks and see what everyone was working on.
+        </p>
+    </section>
+
+    <section id="takeaways">
+        <h3>Takeaways</h3>
+
+        <p>Through working in a team for this assignment, not only did I learn the ins and outs of scrum, but I've also learned how to be a good team member. By fulfilling commitments and managing time I was able to successfully contribute to the group in
+            a meaningful way. Additionally, due to our difficulties with Git, I found that these problems made us all better at using Git. I now believe that I am fairly proficient in Git.</p>
+    </section>
+
+    <script src="../js/nav-bar.js"></script>
+</body>
+
+</html>
