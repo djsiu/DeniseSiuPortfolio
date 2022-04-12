@@ -72,35 +72,20 @@
         <!-- using formspree learned from: https://www.youtube.com/watch?v=N-VXZOng13s&ab_channel=CodewithRom%C3%A1rioHuebra -->
 
         <form action="https://formspree.io/f/xgednkvn" method="POST">
-            <label>
-                Your email:
-                <input type="email" name="email">
+            <label for="email">
+                Name
+                <input type="text" id="email" name="name" placeholder="Name" required>
             </label>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
+            <label for="email">
+                Email
+                <input type="text" id="email" name="email" placeholder="Email" required>
             </label>
-            <button type="submit">Send</button>
+            <label for="message">
+                Message
+                <textarea id="message" name="message" placeholder="Write your message here." required></textarea>
+            </label>
+            <button type="submit" name="submit">SEND</button>
         </form>
-        <!-- <form action="https://formspree.io/denise.j.siu@gmail.com" method="POST">
-            <fieldset class="contact-form">
-                <label for="email">
-                    Name
-                    <input type="text" id="email" name="name" placeholder="Name" required>
-                </label>
-                <label for="email">
-                    Email
-                    <input type="text" id="email" name="email" placeholder="Email" required>
-                </label>
-                <label for="message">
-                    Message
-                    <textarea id="message" name="message" placeholder="Write your message here." required></textarea>
-                </label>
-                <button type="submit" name="submit">SEND</button>
-            </fieldset>
-        </form> -->
-
-
     </section>
     <script src="js/nav-bar.js"></script>
 </body>

@@ -62,12 +62,6 @@ form {
     max-width: 30rem;
 }
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
 label,
 input,
 textarea {
