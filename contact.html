@@ -67,7 +67,25 @@
     <section>
         <!-- form built with help from: https://learn.shayhowe.com/html-css/building-forms/ -->
         <h3>leave a message after the beep... BEEP</h3>
-        <p>[HERE WILL BE A FORM WITH TEXTAREA FOR PEOPLE TO SUBMIT ENQUIRIES]</p>
+
+        <form action="contact-form.php">
+            <fieldset class="contact-form">
+                <label>
+                    Name
+                    <input type="text" name="first-name" placeholder="Name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="text" name="last-name" placeholder="Email" required>
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" placeholder="Write your message here." required></textarea>
+                </label>
+                <button type="submit" name="submit">SEND</button>
+            </fieldset>
+        </form>
+
 
     </section>
     <script src="js/nav-bar.js"></script>
