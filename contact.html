@@ -68,19 +68,19 @@
         <!-- form built with help from: https://learn.shayhowe.com/html-css/building-forms/ -->
         <h3>leave a message after the beep... BEEP</h3>
 
-        <form>
+        <form action="http://formspree.io/denise.j.siu@gmail.com" method="POST">
             <fieldset class="contact-form">
-                <label>
+                <label for="email">
                     Name
-                    <input type="text" name="first-name" placeholder="Name" required>
+                    <input type="text" id="email" name="name" placeholder="Name" required>
                 </label>
-                <label>
+                <label for="email">
                     Email
-                    <input type="text" name="last-name" placeholder="Email" required>
+                    <input type="text" id="email" name="email" placeholder="Email" required>
                 </label>
-                <label>
+                <label for="message">
                     Message
-                    <textarea name="message" placeholder="Write your message here." required></textarea>
+                    <textarea id="message" name="message" placeholder="Write your message here." required></textarea>
                 </label>
                 <button type="submit" name="submit">SEND</button>
             </fieldset>
