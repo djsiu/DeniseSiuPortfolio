@@ -12,6 +12,16 @@ a {
     color: rgb(225, 220, 197);
 }
 
+.hyperlink {
+    text-decoration: underline;
+    color: rgb(225, 220, 197);
+}
+
+.hyperlink:hover, .hyperlink:focus {
+    text-decoration: none;
+    color: black;
+}
+
 .embedded-link:hover,
 .embedded-link:focus {
     text-decoration: underline;
