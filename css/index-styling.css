@@ -107,10 +107,16 @@ img {
     max-width: 25rem;
 }
 
+#data-cursor,
+#minority-report-cursor,
+#opencollab-cursor,
 #parent-app-cursor,
 #int-chicken-cursor,
 #figment-cursor,
+#ducky-cursor,
+#ghost-cursor,
 #safe-spaces-cursor,
+#aritzia-cursor,
 #heather-cursor,
 #waffle-cafe-cursor,
 #name-cursor {
@@ -123,10 +129,16 @@ img {
 
 /* learned combinators from: https://www.w3schools.com/css/css_combinators.asp */
 
+#data-listing:hover>#data-cursor,
+#minority-report-listing:hover>#minority-report-cursor,
+#opencollab-listing:hover>#opencollab-cursor,
 #parent-app-listing:hover>#parent-app-cursor,
 #int-chicken-listing:hover>#int-chicken-cursor,
 #figment-listing:hover>#figment-cursor,
+#ducky-listing:hover>#ducky-cursor,
+#ghost-listing:hover>#ghost-cursor,
 #safe-spaces-listing:hover>#safe-spaces-cursor,
+#aritzia-listing:hover>#aritzia-cursor,
 #heather-listing:hover>#heather-cursor,
 #waffle-cafe-listing:hover>#waffle-cafe-cursor,
 #about-name span:hover~#name-cursor {
@@ -136,10 +148,16 @@ img {
 
 /* changing cursors learned at: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor */
 
+#data-listing,
+#minority-report-listing,
+#opencollab-listing,
 #parent-app-listing,
 #int-chicken-listing,
 #figment-listing,
-#safe-spaces,
+#ducky-listing,
+#ghost-listing,
+#safe-spaces-listing,
+#aritzia-listing,
 #heather-listing,
 #waffle-cafe-listing,
 #about-name span {
@@ -186,6 +204,18 @@ img {
     text-align: center;
 }
 
+/* CHIPS FOR TOOLS */
+.chip-container {
+    display: flex;
+}
+.chip-container div { 
+    color: rgb(237, 117, 47);
+    background-color: rgb(225, 220, 197);
+    margin: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+}
 
 /* ADJUSTING FOR DIFFERENT SCREEN SIZES */
 

@@ -4,6 +4,33 @@
 
 console.log("running image-cursor.js");
 
+// DATA SCIENCE PROJECT 
+var dataCursor = document.getElementById('data-cursor');
+document.addEventListener('mousemove', function(e) {
+    var x = e.pageX;
+    var y = e.pageY;
+    dataCursor.style.left = x + "px";
+    dataCursor.style.top = y + "px";
+})
+
+// MINORITY REPORT
+var minorityReportCursor = document.getElementById('minority-report-cursor');
+document.addEventListener('mousemove', function(e) {
+    var x = e.pageX;
+    var y = e.pageY;
+    minorityReportCursor.style.left = x + "px";
+    minorityReportCursor.style.top = y + "px";
+})
+
+// OPENCOLLAB
+var opencollabCursor = document.getElementById('opencollab-cursor');
+document.addEventListener('mousemove', function(e) {
+    var x = e.pageX;
+    var y = e.pageY;
+    opencollabCursor.style.left = x + "px";
+    opencollabCursor.style.top = y + "px";
+})
+
 // PARENT APP
 var parentAppCursor = document.getElementById('parent-app-cursor');
 document.addEventListener('mousemove', function(e) {
@@ -31,6 +58,24 @@ document.addEventListener('mousemove', function(e) {
     figmentCursor.style.top = y + "px";
 })
 
+// DUCKY DEBUGGING ANIMATION
+var duckyCursor = document.getElementById('ducky-cursor');
+document.addEventListener('mousemove', function(e) {
+    var x = e.pageX;
+    var y = e.pageY;
+    duckyCursor.style.left = x + "px";
+    duckyCursor.style.top = y + "px";
+})
+
+// GHOST ANIMATION
+var ghostCursor = document.getElementById('ghost-cursor');
+document.addEventListener('mousemove', function(e) {
+    var x = e.pageX;
+    var y = e.pageY;
+    ghostCursor.style.left = x + "px";
+    ghostCursor.style.top = y + "px";
+})
+
 // SAFE SPACES
 var safeSpacesCursor = document.getElementById('safe-spaces-cursor');
 document.addEventListener('mousemove', function(e) {
@@ -38,6 +83,15 @@ document.addEventListener('mousemove', function(e) {
     var y = e.pageY;
     safeSpacesCursor.style.left = x + "px";
     safeSpacesCursor.style.top = y + "px";
+})
+
+// ARITZIA WEBSITE REDESIGN
+var aritziaCursor = document.getElementById('aritzia-cursor');
+document.addEventListener('mousemove', function(e) {
+    var x = e.pageX;
+    var y = e.pageY;
+    aritziaCursor.style.left = x + "px";
+    aritziaCursor.style.top = y + "px";
 })
 
 // HEATHER
