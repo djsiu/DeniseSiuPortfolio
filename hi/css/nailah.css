@@ -1,3 +1,145 @@
-/* body {
-  cursor: url('../assets/nailah-favicon.png'), auto;
-} */
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(96, 69, 31, 1);
+}
+
+li, p, .artist { 
+ font-family: 'Courier New', Courier, monospace;
+}
+
+h1 { 
+    margin-top: 5rem;
+}
+
+h2 { 
+    font-size: 3rem;
+    margin-top: 10rem;
+}
+
+.tracklist-title {
+    margin-top: 30rem;
+}
+
+body { 
+    background-color: rgba(255, 242, 207, 1);
+}
+
+.artist {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 2rem;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+}
+
+li {
+    padding: 15px 0;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 90%;
+}
+
+.artist {
+    display: inline-block;
+    font-size: 0.7rem;
+    opacity: 0.6;
+    margin-top: 5px;
+    margin-left: auto;
+    text-align: right;
+    max-width: 30%;
+
+}
+
+.fadeIn {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-appear { 
+    from { 
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ipod-component {
+    margin-top: 0;
+    width: 80%;
+}
+
+@media (max-width: 480px) {
+    .ipod-component {
+        width: 100%;
+    }
+}
+
+.sticky-container {
+    
+    display: flex;
+    justify-content: center;
+    top: 90%;
+}
+
+spline-viewer {
+    height: 100%;
+    margin: 3rem;
+}
+
+a {
+    bottom: 1000px;
+}
+
+.wavy-text span {
+    font-size: 2rem;
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+    animation-delay: calc(0.15s * var(--i));
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0)
+    }
+    20% {
+        transform: translateY(-20px)
+    }
+    40%, 100% {
+        transform: translateY(0)
+    }
+}
+
+.hori-inf-scroll { 
+    bottom: 1rem;
+    position: fixed;
+    border-block: solid 1px rgba(96, 69, 31, 1);
+    width: 100%;
+    background-color: rgba(255, 242, 207, 1);
+    z-index: 10000;
+}
+
+.hori-scroll-text { 
+    animation: hori-scroll 6s linear infinite;
+}
+@keyframes hori-scroll {
+    from { 
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
